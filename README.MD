@@ -6,3 +6,4 @@ This causes an issue with the file "localrundata" that needs to be manually dele
 If not the error "E_CSC_USER_DDLENTITYALREADYEXISTS: Assembly 'master.ext' already exists." will occurr.
 
 Also not sure if reading from the streams a character at a time is the most optimal either.
+"# USQL-MovieLens" 

@@ -1,6 +1,0 @@
-C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\obj\Debug\MovieLens.usqlprojResolveAssemblyReference.cache
-C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\Algebra.xml
-C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\MovieLensExtractor.dll
-C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\Microsoft.Analytics.Interfaces.dll
-C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\MovieLensExtractor.pdb
-C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\obj\Debug\Algebra.xml

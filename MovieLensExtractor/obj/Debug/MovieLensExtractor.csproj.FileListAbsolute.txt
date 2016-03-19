@@ -1,5 +1,0 @@
-C:\Users\daveb\Source\LocalRunDataRoot\MovieLensExtractor.dll
-C:\Users\daveb\Source\LocalRunDataRoot\MovieLensExtractor.pdb
-C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLensExtractor\obj\Debug\MovieLensExtractor.csprojResolveAssemblyReference.cache
-C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLensExtractor\obj\Debug\MovieLensExtractor.dll
-C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLensExtractor\obj\Debug\MovieLensExtractor.pdb
