@@ -1,0 +1,71 @@
+*** Entering compilation, time elapsed until this point: 00:00:04.3413049
+*** Done with C# compilation, time elapsed until this point: 00:00:04.7511577
+#CPP cl.exe pre-compile (iteration 0/0) -- Managed
+#CPP stdout:
+__ScopeCodeGenEngine__.dll.cpp
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c1xx.dll)=2.07944s < 1143017413122 - 1143022275561 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c2.dll)=0.78144s < 1143022280136 - 1143024107403 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+
+#CPP stderr:
+
+#CPP cl.exe compile (iteration 1/2) -- Managed
+#CPP stdout:
+__ScopeCodeGenEngine__.dll.cpp
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c1xx.dll)=0.62602s < 1143024227430 - 1143025691279 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c2.dll)=0.49701s < 1143025693583 - 1143026855771 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+
+#CPP stderr:
+
+#CPP cl.exe compile (iteration 2/2) -- Managed
+#CPP stdout:
+__ScopeCodeGenEngine__.dll.cpp
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c1xx.dll)=0.55725s < 1143024223526 - 1143025526569 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c2.dll)=0.40134s < 1143025529342 - 1143026467807 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+
+#CPP stderr:
+
+#CPP cl.exe pre-compile (iteration 0/0) -- Native
+#CPP stdout:
+__ScopeCodeGenEngine__.dll.cpp
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c1xx.dll)=1.56913s < 1143026921905 - 1143030591060 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c2.dll)=0.10628s < 1143030593374 - 1143030841888 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+
+#CPP stderr:
+
+#CPP cl.exe compile (iteration 1/2) -- Native
+#CPP stdout:
+__ScopeCodeGenEngine__.dll.cpp
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c1xx.dll)=6.35018s < 1143030907031 - 1143045755883 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c2.dll)=8.86693s < 1143045758471 - 1143066492337 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+
+#CPP stderr:
+
+#CPP cl.exe compile (iteration 2/2) -- Native
+#CPP stdout:
+__ScopeCodeGenEngine__.dll.cpp
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c1xx.dll)=1.40910s < 1143030910238 - 1143034205190 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.6000.0\CppSdk\VC\bin\c2.dll)=3.17766s < 1143034207830 - 1143041638269 > BB [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll.cpp]
+
+#CPP stderr:
+
+*** Done with C++ compilation, time elapsed until this point: 00:00:26.2265648
+#LINK stdout:
+__ScopeCodeGenEngine__.dllManaged_pch.obj : warning LNK4042: object specified more than once; extras ignored
+__ScopeCodeGenEngine__.dllNative_pch.obj : warning LNK4042: object specified more than once; extras ignored
+   Creating library C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.lib and object C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.exp
+Linker: LibDef Total time = 0.00295s PB: 37818368 [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+Linker:   MD Merge Total time = 0.15704s PB: 40120320 [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+Linker:   Generate Transitions Total time = 0.00806s PB: 41201664 [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+Linker:   OptRef: Interval #1, time = 0.00339s [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+Linker:   OptRef Total time = 0.16511s PB: 41807872 [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+Linker:   OptIcf Total time = 0.17070s PB: 63983616 [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+Linker:   MD Finalize Total time = 0.01308s PB: 63148032 [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+Linker: Pass 1: Interval #1, time = 0.83479s [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+Linker:   Wait PDB close Total time = 0.22974s PB: 29401088 [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+Linker: Pass 2: Interval #2, time = 0.46918s [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+Linker: Final Total time = 1.30411s < 1143066557511 - 1143069606958 > PB: 30375936 [C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\__ScopeCodeGenEngine__.dll] 
+
+#LINK stderr:
+
+*** Done with C++ linking, time elapsed until this point: 00:00:27.5734832
+*** Exiting compilation, time elapsed until this point: 00:00:27.5747866

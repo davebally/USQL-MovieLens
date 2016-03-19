@@ -1,0 +1,20 @@
+[Info] (c:\kv\private\cosmos\scope\localrun\localvertexhost\localvertexhost.cpp, wmain:380) (LocaVertexHost) Runtime engine initialized
+[Info] (clrmemoryhost.cpp, ScopeEngine::ScopeClrHostMemoryManager::CreateMalloc:232) (CLRMemoryHost) CLR requested IHostMalloc with flags 1
+[Info] (entry.cpp, ScopeEngine::AddBadMemoryNotification:156) (BadMemoryNotification) Bad Memory Notification Routine installed
+[Info] (iomanager.cpp, ScopeEngine::IOManagerImpl::AddStream:258) (IOManager) add stream C:/Users/daveb/AppData/Local/USQLDataRoot/MovieLens/ml-1m/ratings.dat node SV1_Extract_execute:__defaultInput:input#0 into devices
+[Info] (iomanager.cpp, ScopeEngine::IOManagerImpl::AddStream:258) (IOManager) add stream C:\Users\daveb\Source\Repos\usql\Examples\MovieLens\MovieLens\bin\Debug\6F4DF2B32E73EFD3\_Temp\MovieLens09-CosineSimilarityFromCSVWithMax_C04001A3F0703EFE\scopetmpfile._SV1_Extract_out0 node SV1_Extract_execute:__defaultOutput:output#0 into devices
+[Info] (entry.cpp, ScopeEngine::RemoveBadMemoryNotification:169) (BadMemoryNotification) Bad Memory Notification Routine uninstalled
+[Info] (entry.cpp, ScopeEngine::AddBadMemoryNotification:156) (BadMemoryNotification) Bad Memory Notification Routine installed
+[Info] (entry.cpp, ScopeEngine::RemoveBadMemoryNotification:169) (BadMemoryNotification) Bad Memory Notification Routine uninstalled
+[Info] (entry.cpp, ScopeEngine::AddBadMemoryNotification:156) (BadMemoryNotification) Bad Memory Notification Routine installed
+[Info] (entry.cpp, ScopeEngine::RemoveBadMemoryNotification:169) (BadMemoryNotification) Bad Memory Notification Routine uninstalled
+[Info] (entry.cpp, ScopeEngine::AddBadMemoryNotification:156) (BadMemoryNotification) Bad Memory Notification Routine installed
+[Info] (entry.cpp, ScopeEngine::RemoveBadMemoryNotification:169) (BadMemoryNotification) Bad Memory Notification Routine uninstalled
+[Info] (entry.cpp, ScopeEngine::AddBadMemoryNotification:156) (BadMemoryNotification) Bad Memory Notification Routine installed
+[Info] (entry.cpp, ScopeEngine::RemoveBadMemoryNotification:169) (BadMemoryNotification) Bad Memory Notification Routine uninstalled
+[Info] (c:\kv\private\cosmos\scope\scopeengine\src\iomanager.h, ScopeEngine::IOManagerImpl::Reset:807) () IOManager Reset
+[Info] (c:\kv\private\cosmos\scope\localrun\localvertexhost\localvertexhost.cpp, wmain:390) (LocaVertexHost) Execution finished in    2.90 sec
+[Info] (clrmemoryhost.cpp, ScopeEngine::ScopeClrHostGCManager::SuspensionEnding:439) (CLRMemoryHost) Garbage collection finished for generation -1
+[Info] (clrmemoryhost.cpp, ScopeEngine::CLRMemorySize::LogStats:95) (CLRMemoryHost) AllocSize=3371008; HeapSize=1582337; VirtualAddressSize=2240512; AvailableReporting=5361515263; AvailableUsage=21467642623
+[Info] (clrmemoryhost.cpp, ScopeEngine::CLRMemorySize::LogStats:95) (CLRMemoryHost) AllocSize=3371008; HeapSize=1582337; VirtualAddressSize=2240512; AvailableReporting=5361515263; AvailableUsage=21467642623
+[Info] (clrmemoryhost.cpp, ScopeEngine::CLRMemorySize::LogStats:95) (CLRMemoryHost) AllocSize=3371008; HeapSize=1582337; VirtualAddressSize=2240512; AvailableReporting=5361515263; AvailableUsage=21467642623
