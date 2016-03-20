@@ -1,4 +1,4 @@
-﻿DECLARE @INPUTDIR string =  "/MovieLens/ml-1m/";
+﻿DECLARE @INPUTDIR string =  "/movies/ml-1m/";
 DECLARE @RATINGSInp string = @INPUTDIR + "ratings.dat";
 DECLARE @USERSInp string = @INPUTDIR + "users.dat";
 
@@ -63,7 +63,7 @@ FROM @UsersSplit;
              @Users AS b
          ON a.Age == b.Age
          AND a.Occupation == b.Occupation 
-WHERE a.UserID != b.UserID;
+WHERE a.UserID != b.UserID;  // Inequality cannot be part of the join but ok as a filter
 
 
 // Add movies that User A has seen but User B hasnt seen

@@ -19,14 +19,6 @@ DECLARE @USERSInp string = @INPUTDIR + "users.dat";
            Ratings[3] AS Timestamp
 FROM @RatingsSplit;
 
-/*
-@AvgRating =
-    SELECT MovieID,
-           AVG(Rating) AS AvgRating
-    FROM @Ratings
-    GROUP BY MovieID;
-*/
-
 @UsersRaw =
     EXTRACT UserLine string
     FROM @USERSInp
@@ -61,7 +53,7 @@ FROM @RatingsSplit;
                 u.Zip;
 
 @outer =
-    SELECT UserID,MoviesArr.Count AS Movies,MoviesMap.Count AS MapCount
+    SELECT UserID,MoviesArr.Count AS MoviesCount,string.Join(":",MoviesArr) AS MovieList
     FROM @UserWithMovies;
 
 OUTPUT @outer

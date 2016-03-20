@@ -30,22 +30,77 @@
   </ItemGroup>
   <ItemGroup>
     <Script Include="MovieLens\Examples\MovieLens01-LoadUsers.usql" />
-    <Script Include="MovieLens\Examples\MovieLens02-LoadRatingsWithMetaExtractor.usql" />
-    <Script Include="MovieLens\Examples\MovieLens03-LoadRatingsWithStringExtractor.usql" />
+    <Script Include="MovieLens\Examples\MovieLens02-LoadRatingsWithMetaExtractor.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
+    <Script Include="MovieLens\Examples\MovieLens03-LoadRatingsWithStringExtractor.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
     <Script Include="MovieLens\Examples\MovieLens04-LoadRatingsAsString.usql" />
-    <Script Include="MovieLens\Examples\MovieLens05-LoadRatingUSQLSplit.usql" />
-    <Script Include="MovieLens\Examples\MovieLens06-LoadRatingsUSQLSplitDD.usql" />
-    <Script Include="MovieLens\Examples\MovieLens07-LoadRatingsWithBatchExtractor.usql" />
-    <Script Include="MovieLens\Examples\MovieLens08-SplitRatings.usql" />
-    <Script Include="MovieLens\Examples\MovieLens09-UnionRatings.usql" />
-    <Script Include="MovieLens\Examples\MovieLens10-OccupationsTable.usql" />
-    <Script Include="MovieLens\Examples\MovieLens11-SummariseOccupations.usql" />
+    <Script Include="MovieLens\Examples\MovieLens05-LoadRatingUSQLSplit.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
+    <Script Include="MovieLens\Examples\MovieLens06-LoadRatingsUSQLSplitDD.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
+    <Script Include="MovieLens\Examples\MovieLens07-LoadRatingsWithBatchExtractor.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
+    <Script Include="MovieLens\Examples\MovieLens08-SplitRatings.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
+    <Script Include="MovieLens\Examples\MovieLens09-UnionRatings.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
+    <Script Include="MovieLens\Examples\MovieLens10-OccupationsTable.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
+    <Script Include="MovieLens\Examples\MovieLens11-SummariseOccupations.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
     <Script Include="MovieLens\Examples\MovieLens12-CreateViews.usql" />
-    <Script Include="MovieLens\Examples\MovieLens13-FormArrayOfMovies.usql" />
+    <Script Include="MovieLens\Examples\MovieLens13-FormArrayOfMovies.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
     <Script Include="MovieLens\Examples\MovieLens14-CreateTables.usql" />
     <Script Include="MovieLens\Examples\MovieLens15-LoadTables.usql" />
     <Script Include="MovieLens\Examples\MovieLens16-LoadUsers.usql" />
-    <Script Include="MovieLens\Examples\MovieLens17-ConvertRatingsToCSV.usql" />
+    <Script Include="MovieLens\Examples\MovieLens17-ConvertRatingsToCSV.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
     <Script Include="MovieLens\Examples\MovieLens18-LoadRatingsFromCSV.usql">
       <UseLocalComputeAccount>true</UseLocalComputeAccount>
       <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
@@ -167,13 +222,6 @@
     <ScriptCode Include="MovieLens\FullScripts\MovieLens09-CosineSimilarityFromCSVWithMax.usql.cs">
       <DependentUpon>MovieLens\FullScripts\MovieLens09-CosineSimilarityFromCSVWithMax.usql</DependentUpon>
     </ScriptCode>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MovieLensExtractor\MovieLensExtractor.csproj">
-      <Name>MovieLensExtractor</Name>
-      <Project>{1b3e7106-6d16-4b96-87c5-f15e18ffc08f}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(AppData)\Microsoft\DataLake\MsBuild\1.0\Usql.targets" />
 </Project>
