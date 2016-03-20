@@ -46,6 +46,12 @@
     <Script Include="MovieLens\Examples\MovieLens15-LoadTables.usql" />
     <Script Include="MovieLens\Examples\MovieLens16-LoadUsers.usql" />
     <Script Include="MovieLens\Examples\MovieLens17-ConvertRatingsToCSV.usql" />
+    <Script Include="MovieLens\Examples\MovieLens18-LoadRatingsFromCSV.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </Script>
     <Script Include="MovieLens\FullScripts\MovieLens08-SimilarityWithMax.usql">
       <UseLocalComputeAccount>true</UseLocalComputeAccount>
       <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
@@ -130,6 +136,9 @@
     </ScriptCode>
     <ScriptCode Include="MovieLens\Examples\MovieLens17-ConvertRatingsToCSV.usql.cs">
       <DependentUpon>MovieLens\Examples\MovieLens17-ConvertRatingsToCSV.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="MovieLens\Examples\MovieLens18-LoadRatingsFromCSV.usql.cs">
+      <DependentUpon>MovieLens\Examples\MovieLens18-LoadRatingsFromCSV.usql</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="MovieLens\FullScripts\MovieLens08-SimilarityWithMax.usql.cs">
       <DependentUpon>MovieLens\FullScripts\MovieLens08-SimilarityWithMax.usql</DependentUpon>

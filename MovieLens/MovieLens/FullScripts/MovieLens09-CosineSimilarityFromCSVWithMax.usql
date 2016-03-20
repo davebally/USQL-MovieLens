@@ -3,16 +3,20 @@ DECLARE @RATINGSInp string = @INPUTDIR + "ratings.dat";
 DECLARE @USERSInp string = @INPUTDIR + "users.dat";
 
 
+// Ratings in the format MovieID::UserID::Rating::Timestamp
 @RatingsRaw =
     EXTRACT RatingLine string
     FROM @RATINGSInp
     USING Extractors.Tsv( rowDelimiter: "\n");
 
+// Split Ratings into Array using String.Split 
+// Notice that a >1 char seperator has to be passed in an array
 @RatingsSplit =
     SELECT RatingLine,new SQL.ARRAY<string>(
            RatingLine.Split(new string[]{"::"},StringSplitOptions.None)) AS Ratings
     FROM @RatingsRaw;
 
+// Type casting and column rename
 @Ratings =
     SELECT int.Parse(Ratings[0]) AS MovieID,
            int.Parse(Ratings[1]) AS UserID,
@@ -20,6 +24,7 @@ DECLARE @USERSInp string = @INPUTDIR + "users.dat";
            Ratings[3] AS Timestamp
 FROM @RatingsSplit;
 
+// Average Movie Rating
 @AvgRating =
     SELECT MovieID,
            AVG(Rating) AS AvgRating
@@ -27,17 +32,19 @@ FROM @RatingsSplit;
     GROUP BY MovieID;
 
 
+// Users into format UserID::Gender::Age::Occupation::Zip
 @UsersRaw =
     EXTRACT UserLine string
     FROM @USERSInp
     USING Extractors.Tsv( rowDelimiter: "\n");
 
+// Split into array
 @UsersSplit =
     SELECT UserLine,new SQL.ARRAY<string>(
            UserLine.Split(new string[]{"::"},StringSplitOptions.None)) AS UserArr
     FROM @UsersRaw;
 
-
+// Type casting and column renaming
 @Users =
     SELECT int.Parse(UserArr[0]) AS UserID,
            UserArr[1] AS Gender,
@@ -47,6 +54,7 @@ FROM @RatingsSplit;
 FROM @UsersSplit;
 
 
+// Join Users to Users on Age Range and Occupation
 @CrossJoin =
     SELECT a.UserID AS aUserID,
            b.UserID AS bUserID
@@ -58,6 +66,7 @@ FROM @UsersSplit;
 WHERE a.UserID != b.UserID;
 
 
+// Add movies that User A has seen but User B hasnt seen
 @CrossJoinWithMovies =
     SELECT aUserID,
            bUserID,
@@ -72,6 +81,7 @@ WHERE a.UserID != b.UserID;
             AND aUserRatings.MovieID == Ratings.MovieID
     WHERE aUserRatings.UserID == NULL;
 
+// Cosine Calc - Step 1
 @CrossJoinRatings1 =
     SELECT aUserID,
            bUserID,
@@ -90,6 +100,7 @@ WHERE a.UserID != b.UserID;
             AND r1.MovieID == r2.MovieID;
 
 
+// Cosine Calc - Step 2
 @cj1 =
     SELECT aUserID,
            bUserID,
@@ -100,12 +111,15 @@ WHERE a.UserID != b.UserID;
     GROUP BY aUserID,
              bUserID;
 
+// Cosine Calc - Step 3 - Similarity Ranges from 0.000 ( Not similar) to 1.000 ( Exact match)
 @Similarity =
     SELECT aUserID,
            bUserID,
            (double) r1 / (Math.Sqrt((double) SumASquared) * Math.Sqrt((double) SumBSquared)) AS Similarity
     FROM @cj1 AS cj;
 
+// Final Recommendations
+// Max String is in the Format of Similarity Match,Average Movie Rating,Movie Recommended
 @Rec =
     SELECT Similarity.aUserID,
            MAX(Similarity.Similarity.ToString("0.0000") + "," + ar.AvgRating.ToString() + "," + ar.MovieID.ToString()) AS MaxString
@@ -119,9 +133,10 @@ WHERE a.UserID != b.UserID;
          JOIN
              @CrossJoinWithMovies AS crjMovies
          ON crjMovies.aUserID == Similarity.aUserID AND crjMovies.bUserID == Similarity.bUserID AND ar.MovieID == crjMovies.UnseenMovieID
-    WHERE Similarity < 1 AND Similarity >= .95
+    WHERE Similarity < 1 AND Similarity >= .95  // We do not want exact matches and assumption is everyone is vagually similar to someone
     GROUP BY Similarity.aUserID;
 
+// Output final file
 OUTPUT @Rec
 TO "Recommend.csv" 
 USING Outputters.Csv();
